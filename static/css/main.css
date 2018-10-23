@@ -83,7 +83,7 @@ div.second div.col-4 {
 }
 
 div.third {
-  padding-top: 9vh;
+  padding-top: 6vh;
   padding-bottom: 8vh;
   min-height: 100vh;
 }
@@ -92,22 +92,78 @@ img.emma_2 {
    /*position: absolute;
    top: 50%;
    left: 50%;*/
-   width: 20vw;
-   height: 30vw;
+   width: 31vw;
+   height: 46.5vw;
+   padding-top: 4vh;
+   padding-left: 5vw;
    /*argin-top: -10.6vw; Half the height
    margin-left: -15vw; /* Half the width */
 }
 
 div.third div.row {
-  padding-top: 3vh;
+  padding-top: 4vh;
+  text-align: justify;
 }
 
 div.row div.right {
   text-align: right;
 }
 
+div.fourth {
+  padding-top: 8vh;
+}
+
+div.cv {
+  padding-top: 3vh;
+}
+
+div.fourth h6 {
+  padding-top: 3px;
+}
+
+div.quotes {
+  padding-bottom: 10vh;
+}
+
+div.quotes .container {
+  padding-left: none;
+  padding-right: none;
+}
+
+.blockquote {
+  font-size: 1rem !important;
+}
+
+.quote {
+  padding-left: 5vw;
+  padding-right: 5vw;
+}
+
 div.footer {
   background: url("../img/back_2.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+div.footer-text {
+  padding-top: 40vh;
+  padding-right: 10vw;
+}
+
+div.footer-text p {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: white;
+}
+
+.test-img {
+    width: 300px;
+    height: 500px;
+    max-height: 500px;
+    overflow: hidden;
+ }
+.test-img img {
+   width: 100%;
+   height: 100%;
+
 }
