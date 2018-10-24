@@ -14,6 +14,10 @@ body {
   background-size: cover, cover;
 }
 
+@-ms-viewport{
+  width: device-width;
+}
+
 h2 {
   text-transform: uppercase;
   font-weight: 200 !important;
@@ -23,12 +27,12 @@ div.main {
   height: 100%;
 }
 
-div.section {
+div.section.first {
   width: 100%;
   height: 100%;
 }
 
-div.first {
+div.navi {
   position: relative;
   top: 50%;
   transform: translateY(-50%);
@@ -37,24 +41,34 @@ div.first {
   text-transform: uppercase;
 }
 
-div.first ul {
+div.navi ul {
   list-style: none;
 }
 
-div.first li {
+div.navi li {
   font-size: 150%;
   margin-top: 0.5em;
 }
 
-div.first a {
+div.navi a {
   /*text-shadow: 0px 1px 10px rgba(150, 150, 150, 1);*/
   text-decoration: none !important;
   color: white;
 }
 
-div.first a:hover {
+div.navi a:hover {
   text-shadow: 0px 1px 10px rgba(150, 150, 150, 1);
   text-decoration: none !important;
+}
+
+@media screen and (max-width: 770px) {
+  div.navi {
+    top: 70%;
+  }
+  div.navi li {
+    font-size: 120%;
+    text-align: right;
+  }
 }
 
 div.second {
@@ -72,14 +86,23 @@ div.second p.up {
 }
 
 div.second div.row {
-  padding-left: 6vw;
-  padding-right: 6vw;
+  /*padding-left: 6vw;
+  padding-right: 6vw;*/
   text-align: justify;
 }
 
 div.second div.col-4 {
   padding-left: 3vw;
   padding-right: 3vw;
+}
+
+@media screen and (max-width: 770px) {
+  div.second {
+    padding-top: 5.5vh;
+  }
+  div.second.section {
+    height: none;
+  }
 }
 
 div.third {
@@ -131,7 +154,12 @@ div.quotes .container {
 }
 
 .blockquote {
-  font-size: 1rem !important;
+  font-size: 0.9rem !important;
+  font-style: italic;
+}
+
+.blockquote footer {
+  font-style: normal;
 }
 
 .quote {
