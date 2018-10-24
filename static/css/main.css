@@ -116,7 +116,7 @@ img.emma_2 {
    top: 50%;
    left: 50%;
    width: 31vw;*/
-   max-height: 43vw;
+   max-height: 35vw;
    padding-top: 0vh;
    /*padding-left: 5vw;*/
    /*argin-top: -10.6vw; Half the height
@@ -129,10 +129,10 @@ div.row div.col-md-8 {
 
 @media screen and (min-width: 1204px) {
   img.emma_2 {
-     padding-top: 3vh;
+     padding-top: 0.5vh;
   }
   div.row div.col-md-8 {
-    padding-left: 5vw;
+    padding-left: 0vw;
   }
 }
 
@@ -190,12 +190,12 @@ div.footer {
 }
 
 div.footer-text {
-  padding-top: 40vh;
+  padding-top: 37vh;
   padding-right: 10vw;
 }
 
 div.footer-text p {
-  font-size: 1.5em;
+  font-size: 1.3em;
   font-weight: bold;
   color: white;
 }
