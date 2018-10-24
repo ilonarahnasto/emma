@@ -106,7 +106,7 @@ div.second div.col-4 {
 }
 
 div.third {
-  padding-top: 6vh;
+  padding-top: 5vh;
   padding-bottom: 8vh;
   min-height: 100vh;
 }
@@ -114,17 +114,30 @@ div.third {
 img.emma_2 {
    /*position: absolute;
    top: 50%;
-   left: 50%;*/
-   width: 31vw;
-   height: 46.5vw;
-   padding-top: 4vh;
-   padding-left: 5vw;
+   left: 50%;
+   width: 31vw;*/
+   max-height: 43vw;
+   padding-top: 0vh;
+   /*padding-left: 5vw;*/
    /*argin-top: -10.6vw; Half the height
    margin-left: -15vw; /* Half the width */
 }
 
+div.row div.col-md-8 {
+  padding-left: 5vw;
+}
+
+@media screen and (min-width: 1204px) {
+  img.emma_2 {
+     padding-top: 3vh;
+  }
+  div.row div.col-md-8 {
+    padding-left: 5vw;
+  }
+}
+
 div.third div.row {
-  padding-top: 4vh;
+  padding-top: 5vh;
   text-align: justify;
 }
 
@@ -133,11 +146,12 @@ div.row div.right {
 }
 
 div.fourth {
+  min-height: 100%;
   padding-top: 8vh;
 }
 
 div.cv {
-  padding-top: 3vh;
+  padding-top: 5vh;
 }
 
 div.fourth h6 {
@@ -145,7 +159,8 @@ div.fourth h6 {
 }
 
 div.quotes {
-  padding-bottom: 10vh;
+  min-height: 40%;
+  /*padding-bottom: 10vh;*/
 }
 
 div.quotes .container {
@@ -168,6 +183,7 @@ div.quotes .container {
 }
 
 div.footer {
+  min-height: 100%;
   background: url("../img/back_2.jpg");
   background-repeat: no-repeat;
   background-size: cover;
