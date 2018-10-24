@@ -46,7 +46,7 @@ div.first h1 {
 
 @media screen and (max-width: 770px) {
   div.first h1 {
-    font-size: 180%;
+    font-size: 170%;
     padding-top: 8px;
   }
 }
