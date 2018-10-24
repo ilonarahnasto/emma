@@ -57,8 +57,9 @@ div.navi a {
 }
 
 div.navi a:hover {
-  text-shadow: 0px 1px 10px rgba(150, 150, 150, 1);
-  text-decoration: none !important;
+  /*text-shadow: 0px 1px 10px rgba(150, 150, 150, 1);
+  text-decoration: none !important;*/
+  color: #f7f7f7;
 }
 
 @media screen and (max-width: 770px) {
@@ -116,7 +117,8 @@ img.emma_2 {
    top: 50%;
    left: 50%;
    width: 31vw;*/
-   max-height: 35vw;
+   width: 22vw;
+   max-width: 100%;
    padding-top: 0vh;
    /*padding-left: 5vw;*/
    /*argin-top: -10.6vw; Half the height
