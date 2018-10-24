@@ -37,12 +37,26 @@ div.section.first {
   height: 100%;
 }
 
+div.first h1 {
+  color: white;
+  font-weight: 200;
+  text-transform: uppercase;
+  padding-top: 4px;
+}
+
+@media screen and (max-width: 770px) {
+  div.first h1 {
+    font-size: 180%;
+    padding-top: 8px;
+  }
+}
+
 div.navi {
   position: relative;
   top: 50%;
   transform: translateY(-50%);
   color: white;
-  font-weight: 400;
+  font-weight: bold;
   text-transform: uppercase;
 }
 
@@ -61,34 +75,9 @@ div.navi a {
   color: white;
 }
 
-/*div.navi a:hover {
-  text-shadow: 0px 1px 10px rgba(150, 150, 150, 1);
-  text-decoration: none !important;
-  color: #f7f7f7;
-}*/
-
-/*effect-underline*/
-/*div.navi a:after {
-	content: '';
-  position: absolute;
-  left: 0;
-  display: inline-block;
-  height: 1em;
-  width: 100%;
-  border-bottom: 1px solid;
-  margin-top: 10px;
-  opacity: 0;
-	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-	transition: opacity 0.35s, transform 0.35s;
-	-webkit-transform: scale(0,1);
-	transform: scale(0,1);
+div.navi a:hover {
+  text-shadow: 0px 0.5px 0px #f4f4f4;
 }
-
-div.navi a:hover:after {
-  opacity: 1;
-	-webkit-transform: scale(1);
-	transform: scale(1);
-}*/
 
 @media screen and (max-width: 770px) {
   div.navi {
@@ -250,6 +239,34 @@ div.footer-text p {
   color: white;
 }
 
+div.footer div.desktop {
+  display: none;
+}
+
+div.footer div.mobile {
+  display: none;
+}
+
+@media screen and (min-width: 770px) {
+  div.footer div.desktop {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  div.footer {
+    background-position: 35%;
+  }
+  div.footer div.mobile {
+    display: block;
+  }
+  div.footer div.mobile p {
+    font-size: 1em;
+    font-weight: bold;
+    color: white;
+  }
+}
+
 div.mobile-img {
   padding-bottom: 5vh;
   display: none;
@@ -257,6 +274,12 @@ div.mobile-img {
 
 img.mob {
   max-width: 70vw;
+}
+
+@media screen and (min-width: 720px){
+  img.mob {
+    max-width: 50vw;
+  }
 }
 
 @media screen and (max-width: 770px) {
