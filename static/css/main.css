@@ -37,7 +37,7 @@ div.navi {
   top: 50%;
   transform: translateY(-50%);
   color: white;
-  font-weight: bold;
+  font-weight: 400;
   text-transform: uppercase;
 }
 
@@ -56,11 +56,34 @@ div.navi a {
   color: white;
 }
 
-div.navi a:hover {
-  /*text-shadow: 0px 1px 10px rgba(150, 150, 150, 1);
-  text-decoration: none !important;*/
+/*div.navi a:hover {
+  text-shadow: 0px 1px 10px rgba(150, 150, 150, 1);
+  text-decoration: none !important;
   color: #f7f7f7;
+}*/
+
+/*effect-underline*/
+/*div.navi a:after {
+	content: '';
+  position: absolute;
+  left: 0;
+  display: inline-block;
+  height: 1em;
+  width: 100%;
+  border-bottom: 1px solid;
+  margin-top: 10px;
+  opacity: 0;
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+	-webkit-transform: scale(0,1);
+	transform: scale(0,1);
 }
+
+div.navi a:hover:after {
+  opacity: 1;
+	-webkit-transform: scale(1);
+	transform: scale(1);
+}*/
 
 @media screen and (max-width: 770px) {
   div.navi {
@@ -131,9 +154,21 @@ img.emma_2 {
      padding-top: 0.5vh;
   }
 }
+@media screen and (max-width: 770px) {
+  div.ayy-img {
+    display: none;
+  }
+  div.ayy h6 {
+    padding-top: 2vh;
+  }
+}
 
 div.third div.row {
   padding-top: 5vh;
+  text-align: left;
+}
+
+div.third div.row p {
   text-align: justify;
 }
 
@@ -144,6 +179,12 @@ div.row div.right {
 div.fourth {
   min-height: 100%;
   padding-top: 8vh;
+}
+
+@media screen and (max-width: 770px) {
+  div.fourth {
+    padding-top: 6vh;
+  }
 }
 
 div.cv {
@@ -178,6 +219,14 @@ div.quotes .container {
   padding-right: 5vw;
 }
 
+@media screen and (max-width: 770px) {
+  div.quotes {
+    min-height: 70%;
+    padding-bottom: 8vh;
+    padding-top: 8vh;
+  }
+}
+
 div.footer {
   min-height: 100%;
   background: url("../img/back_2.jpg");
@@ -196,14 +245,21 @@ div.footer-text p {
   color: white;
 }
 
-.test-img {
-    width: 300px;
-    height: 500px;
-    max-height: 500px;
-    overflow: hidden;
- }
-.test-img img {
-   width: 100%;
-   height: 100%;
+div.mobile-img {
+  padding-bottom: 5vh;
+  display: none;
+}
 
+img.mob {
+  max-width: 70vw;
+}
+
+@media screen and (max-width: 770px) {
+  div.container {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+  div.mobile-img {
+    display: block;
+  }
 }
