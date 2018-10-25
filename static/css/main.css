@@ -79,7 +79,6 @@ div.navi li {
 }
 
 div.navi a {
-  /*text-shadow: 0px 1px 10px rgba(150, 150, 150, 1);*/
   text-decoration: none !important;
   color: white;
 }
@@ -121,8 +120,6 @@ div.second p.up {
 }
 
 div.second div.row {
-  /*padding-left: 6vw;
-  padding-right: 6vw;*/
   text-align: justify;
 }
 
@@ -147,17 +144,10 @@ div.third {
 }
 
 img.emma_2 {
-   /*position: absolute;
-   top: 50%;
-   left: 50%;
-   width: 31vw;*/
    width: 25vw;
    max-width: 100%;
    padding-top: 0vh;
    padding-right:1vw;
-   /*padding-left: 5vw;*/
-   /*argin-top: -10.6vw; Half the height
-   margin-left: -15vw; /* Half the width */
 }
 
 @media screen and (min-width: 1204px) {
@@ -208,7 +198,6 @@ div.fourth h6 {
 
 div.quotes {
   min-height: 40%;
-  /*padding-bottom: 10vh;*/
 }
 
 div.quotes .container {
