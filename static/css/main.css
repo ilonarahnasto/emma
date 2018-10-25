@@ -37,16 +37,29 @@ div.section.first {
   height: 100%;
 }
 
+div.lan {
+  position:absolute;
+  top:0;
+  right:7px;
+  color: white;
+}
+
+div.lan p {
+  margin-bottom: 0;
+  font-size: 1.2em;
+}
+
 div.first h1 {
   color: white;
   font-weight: 200;
   text-transform: uppercase;
   padding-top: 4px;
+  text-align: center;
 }
 
 @media screen and (max-width: 770px) {
   div.first h1 {
-    font-size: 170%;
+    font-size: 7vw;
     padding-top: 8px;
   }
 }
